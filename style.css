@@ -1,0 +1,314 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  /* Full-Width Containers */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px; /* Add padding to ensure content doesn't touch screen edges */
+    box-sizing: border-box;
+  }
+  
+  .section {
+    border-left: 4px solid #c86dd7;
+    padding-left: 40px; /* Reduced padding for smaller screens */
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: #c86dd7;
+  }
+  
+  .section-number {
+    font-size: 50px;
+    color: #c86dd7;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    line-height: 1;
+  }
+  
+  .container4, .container5 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; /* This ensures flex items wrap on smaller screens */
+  }
+  
+  .column, .text-section {
+    width: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .image-section {
+    width: 48%;
+    background-image: url('Images/Slide5.pngs');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Ensure proper image scaling */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For tablets */
+  @media (max-width: 768px) {
+    .section {
+      padding-left: 20px; /* Reduce padding on smaller screens */
+    }
+  
+    .section-title, .section-number {
+      font-size: 18px; /* Smaller font size for better readability */
+    }
+  
+    .container4, .container5 {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .column, .text-section, .image-section {
+      width: 100%; /* Full width on smaller screens */
+      padding: 10px;
+    }
+  
+    .navbar-brand img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .text-section h1, .text-section h2 {
+      font-size: 20px;
+    }
+  
+    .text-section p {
+      font-size: 14px;
+    }
+  
+    footer {
+      font-size: 14px;
+    }
+  }
+  
+  /* For smaller phones */
+  @media (max-width: 576px) {
+    .section {
+      padding-left: 15px; /* Further reduce padding for small screens */
+    }
+  
+    .section-title, .section-number {
+      font-size: 16px;
+    }
+  
+    .navbar-brand img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .text-section h1, .text-section h2 {
+      font-size: 18px;
+    }
+  
+    .text-section p {
+      font-size: 12px;
+    }
+  
+    .container {
+      padding: 10px; /* Reduce padding further to avoid clipping */
+    }
+    
+    /* Ensure columns stack properly */
+    .column, .text-section, .image-section {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    footer {
+      font-size: 12px;
+    }
+  }
+  
+  /* Additional Media Queries to ensure proper visibility */
+  /* For screens smaller than 400px (very small devices) */
+  @media (max-width: 400px) {
+    .section-title {
+      font-size: 14px; /* Further reduce font sizes */
+    }
+  
+    .section-number {
+      font-size: 36px;
+    }
+  
+    .text-section h1, .text-section h2 {
+      font-size: 16px;
+    }
+  
+    .text-section p {
+      font-size: 10px; /* Smallest readable font size */
+    }
+  
+    .navbar-brand img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: none;
+}
+
+.icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    text-align: center;
+}
+.bi{
+    color:#c86dd7;
+}
+/* Slider 8 container styling */
+.container8 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+    align-items: stretch; /* Ensures equal height for both sections */
+}
+
+.text-section2 {
+    width: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-section2 {
+    width: 48%;
+    background-image: url('Images/girl.jpeg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: auto; /* Ensures the height matches the content section */
+}
+
+@media (max-width: 768px) {
+    .container8 {
+        flex-direction: column;
+    }
+
+    .text-section2, .image-section2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image-section2 {
+        height: 300px; /* Set a height for mobile screens */
+        background-size: contain; /* Ensure the full image is visible */
+        background-repeat: no-repeat; /* Prevent image tiling */
+    }
+}
+
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  img {
+    margin-bottom: 15px;
+  }
+}
+
+.green-shadow {
+  box-shadow: 10px 17px 30px rgba(114, 15, 142, 0.6);
+}
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  img {
+    margin-bottom: 15px;
+  }
+}
+
+ /* Box shadow on hover */
+ .box-shadow-effect {
+  transition: box-shadow 0.3s ease;
+}
+
+.box-shadow-effect:hover {
+  box-shadow: 0 4px 12px rgba(114, 15, 142, 0.6);
+}
+
+.image-section img {
+  box-shadow: 0 4px 12px rgba(114, 15, 142, 0.6); /* Add shadow to the image */
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .image-section img {
+    margin-bottom: 15px;
+  }
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #343a40; /* Dark background for footer */
+  color: white;
+  padding: 20px;
+}
+.icon-container {
+  margin-top: 10px;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin: 0 10px;
+  background-color: #343a40; /* Match icon background to footer */
+  border-radius: 50%;
+  fill: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.social-icon:hover {
+  background-color: #495057; /* Slightly lighter color on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+.circle-img {
+  width: 250px;
+  height: 250px; /* Adjust the height to match the width for a perfect circle */
+  object-fit: cover; /* Ensures the image covers the circle without distortion */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+.rounded-circle {
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* This ensures the image fits within the bounds */
+}
